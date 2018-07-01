@@ -1,69 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="shortcut icon" href="img/fav.png">
-	<meta name="author" content="CodePixar">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta charset="UTF-8">
-    <title>CUrrency Converter</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title> Currency Converter</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
 		<link rel="stylesheet" href="css/linearicons.css">
 		<link rel="stylesheet" href="css/owl.carousel.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/nice-select.css">
 		<link rel="stylesheet" href="css/magnific-popup.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="main-wrapper-first">
-  <div class="hero-area relative">
-    <header>
-      <div class="container">
-        <div class="header-wrap">
-          <div class="header-top d-flex justify-content-between align-items-center">
-            <div class="logo">
-              <h1>Currency Converter</h1>
-            </div>
-          </div>
-        </div>
+
+<div class="container">
+  <div class="app-container">
+      <div class="form-group">
+        <p>Currency Converter</p>
       </div>
-    </header>
-    <div class="banner-area">
-      <div class="container">
-        <div class="row height align-items-center">
-          <div class="col-lg-7">
-            <div class="banner-content">
-              <div class="row">
-                <div class="col-3 col">
-                  <input type="text" value="1" name="amt" id="amt" placeholder="Enter amount" size="6" />
-                </div>
-                <div class="col">
-                  <select id="currency_from">
-                  </select>
-                </div>
-                  <div class="col"><span>to</span></div>
-                <div class="col">
-                  <select id="currency_to">                    
-                  </select>
-                </div>
-                <div>
-                  <button onclick="calculateCurrency()" id="btnConvert" class="button postfix">Convert</button>
-                </div>
-                <div>
-                  <input type="text" name="converted_result" id="converted_result" size="6" />
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="">
+        <div class="form-group">
+            <label>Currency</label>
+            <select class="form-control" id="currentCurrencyList">
+            </select>
         </div>
-      </div>
+        <div class="form-group">
+            <label>Amount</label>
+            <input type="number" id="value" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Convert to</label>
+            <select class="form-control" id="destinationCurrencyList">
+            </select>
+        </div>
+        <div class="display-box">
+                <input type="number" id="displayValue" class="form-control">
+          </div>
+        <div class="btn-section text-center">
+            <button class="btn">Reset</button>
+            <button class="btn btn-primary" onclick="convert()">Convert</button>
+        </div>
     </div>
   </div>
 </div>
 
-<script src="scripts/app.js" async></script>
-</body>
+</body> 
+<script type="text/javascript" src="jss/idb.js"></script> 
+<script type="text/javascript" src="jss/app.js"></script>
+<script type="text/javascript" src="jss/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
