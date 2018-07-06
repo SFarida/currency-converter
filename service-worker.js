@@ -10,7 +10,7 @@ const filesToCache = [
     '/js/convert.js',
     '/index.html'
 ];
-
+ 
 self.addEventListener( "install" , function (event) { 
     console.log('[ServiceWorker] Install');
     event.waitUntil(

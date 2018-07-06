@@ -2,7 +2,7 @@
 let converter = new Converter()
 converter.getAllCurrencies()
 converter.showCachedCurrencies()
-
+ 
 
 function convert(){
     let currentCurrency = document.getElementById("currentCurrencyList").value;

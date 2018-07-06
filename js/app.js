@@ -62,7 +62,7 @@ class Converter {
             console.log('list of currencies added to cache (db)');
          }).catch(error => console.log('Something went wrong: '+ error));
     }
-    
+         
     addCurrencyRateToCache(rate, fromCurrency, toCurrency) {
         this.dbPromise.then(db => {
             if (!db) return;

@@ -48,7 +48,7 @@
       });
     });
   }
-
+ 
   function proxyRequestMethods(ProxyClass, targetProp, Constructor, properties) {
     properties.forEach(function(prop) {
       if (!(prop in Constructor.prototype)) return;
