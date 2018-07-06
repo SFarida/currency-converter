@@ -1,14 +1,17 @@
 
 self.addEventListener( "install" , function (event) { 
     event.waitUntil(
-        caches.open("cacheName1").then(function(cache) {
+        caches.open("cache1").then(function(cache) {
             return cache.addAll(
                 [
                     '/',
                     '/css/main.css',
-                    '/jss/app.js',
-                    '/jss/idb.js',
-                    '/jss/main.js',
+                    '/css/util.css',
+                    '/images/icons/favicon.ico',
+                    '/images/bg-01.jpg',
+                    '/js/app.js',
+                    '/js/idb.js',
+                    '/js/convert.js',
                     '/index.html'
                 ]
             );

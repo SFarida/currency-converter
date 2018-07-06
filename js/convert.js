@@ -25,22 +25,4 @@ function convert(){
         console.log('No rate was found in the cache: ');
         document.getElementById("displayValue").innerHTML = "Can not convert. You seem to be offline"
     });
-
-    // converter.getCurrencyRateFromCache(currentCurrency, destinationCurrency).then(response => {
-    //     if (!response)
-    //         fetch('https://free.currencyconverterapi.com/api/v5/convert?q='+query+'&compact=y&')
-    //         .then(response => {
-    //             return response.json();
-    //         }).then(response => {
-    //             console.log(response)
-    //             // document.getElementById("displayValue").innerHTML = value * response[query].val
-    //         })
-    // })
-
-    // fetch(baseUrl+'convert?q='+query+'&compact=y&')
-    // .then(response => {
-    //     return response.json();
-    // }).then(response => {
-    //     document.getElementById("displayValue").innerHTML = value * response[query].val
-    // })
 }

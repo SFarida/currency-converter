@@ -25,7 +25,7 @@ class Converter {
             return Promise.resolve();
           }
         
-          return idb.open('currencyConverter', 4, upgradeDb => {
+          return idb.open('converterIdb', 4, upgradeDb => {
                 switch(upgradeDb.oldVersion) {
                     case 0:
                         upgradeDb.createObjectStore('currencies');
